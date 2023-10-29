@@ -1,242 +1,6 @@
 <?php
-/// 001 - Introduction & Important Information
 
-/// 002 - What’s New And How To Study The Course ?
-
-/// 003 - Install PHP And Prepare Environment To Work
-
-/// 004 - PHP Tags And Instructions Separation
-
-  // echo 'We Love PHP';
-  // echo '<br>';
-
-  // ECHO 'We Love PHP';
-  // ECHO '<br>';
-
-  // print 'We Love PHP';
-  // print '<br>';
-
-  // PRINT 'We Love PHP';
-  // PRINT '<br>';
-
-?>
-
-<!-- <.?= 'We Love PHP With Short Tag';?.> //* delete . in the line code --> 
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-  </head>
-  <body>
-    <?php // echo 'HTML'; ?>
-  </body>
-</html> -->
-<?php // echo 'HTML';
-
-// ------------------------------------------------------//
-// ======================================================//
-// ------------------------------------------------------//
-
-/// 005 - Comments And Best Practices
-
-  // Single Line Comment
-  // echo 'Test'; // Single Line Comment
-  // echo 'Test'; # Single Line Comment
-
-  /*
-    Line 1
-    Line 2
-  */
-
-  /*
-    ====================
-    == My Special App ==
-    ====================
-  */
-
-  /* Single Line */
-
-  // echo 'Test' /* Single Line */;
-
-  // I Used Print Because Its Faster Than Echo <= Example Not True
-  // print 'Test';
-
-// ------------------------------------------------------//
-// ======================================================//
-// ------------------------------------------------------//
-
-/// 006 - Introduction To Data Type
-
-  /*
-  ============================================
-  = Data Types
-  = ----------
-  = bool  => Boolean
-  = int   => Integer
-  = float => Floating Point Number | double
-  = string
-  = array
-  = Other Types
-  = gettype()
-  ============================================
-  */
-
-  // echo "1- ".gettype(True);
-  // echo '<br>';
-  // echo "2- ".gettype(False);
-  // echo '<br>';
-  // echo "3- ".gettype(true);
-  // echo '<br>';
-  // echo "4- ".gettype(100);
-  // echo '<br>';
-  // echo "5- ".gettype(-200);
-  // echo '<br>';
-  // echo "6- ".gettype(0);
-  // echo '<br>';
-  // echo "7- ".gettype(70.30);
-  // echo '<br>';
-  // echo "8- ".gettype(-60.30);
-  // echo '<br>';
-  // echo "9- ".gettype('Elzero');
-  // echo '<br>';
-  // echo "10- ".gettype("Elzero");
-  // echo '<br>';
-  // echo "11- ".gettype(array("EG" => "Egypt", "KSA" => "Saudi Arabia"));
-  // echo '<br>';
-  // echo "12- ".gettype(array("Egypt", "Saudi Arabia"));
-  // echo '<br>';
-  // echo "13- ".gettype(["Egypt", "Saudi Arabia"]);
-
-// ------------------------------------------------------//
-// ======================================================//
-// ------------------------------------------------------//
-
-/// 007 - Type Juggling And Automatic Type Conversion
-
-  /*
-  ============================================
-  = Data Types
-  = ----------
-  = Type Juggling + Automatic Type Conversion
-  ============================================
-  */
-
-  // echo 1 + "2"; // 3
-  // echo '<br>';
-  // echo gettype(1 + "2"); // Integer
-  // echo '<br>';
-  // echo True; // 1
-  // echo '<br>';
-  // echo gettype(True); // Boolean
-  // echo '<br>';
-  // echo True + True; // 2
-  // echo '<br>';
-  // echo gettype(True + True); // Integer
-  // echo '<br>';
-  // echo 5 + '5 Lessons'; // 10 => Warning
-  // echo '<br>';
-  // echo gettype(5 + '5 Lessons'); // Integer => Warning
-  // echo '<br>';
-  // echo 10 + 15.5; // 25.5
-  // echo '<br>';
-  // echo gettype(10 + 15.5); // double => Float
-  // echo '<br>';
-
-// ------------------------------------------------------//
-// ======================================================//
-// ------------------------------------------------------//
-
-/// 008 - Type Casting
-
-  /*
-  ============================================
-  = Data Types
-  = ----------
-  = Type Casting
-  = ----------------------
-  = "boolean" or "bool"
-  = "integer" or "int"
-  = "float" or "double" or "real"
-  = "string"
-  = "array"
-  = "object"
-  = "null"
-  = ------
-  = Search For Settype
-  ============================================
-  */
-
-  // echo 5 + (int) "5 Lessons";
-  // echo '<br>';
-  // echo 5 + (integer) "5 Lessons";
-  // echo '<br>';
-  // echo 5 + ( integer ) "5 Lessons";
-  // echo '<br>';
-  // echo gettype(5 + (int) "5 Lessons");
-  // echo '<br>';
-  // echo 10 + 15.5;
-  // echo '<br>';
-  // echo 10 + (int) 15.5;
-  // echo '<br>';
-  // echo gettype(10 + (int) 15.5);
-  // echo '<br>';
-  // echo 10.5 + 10.5;
-  // echo '<br>';
-  // echo gettype(10.5 + 10.5);
-  // echo '<br>';
-  // echo (int) 10.5 + (int) 10.5; // 20
-  // echo '<br>';
-  // echo gettype((int) 10.5 + (int) 10.5);
-  // echo '<br>';
-  // echo (int) (10.5 + 10.5); // 21
-
-// ------------------------------------------------------//
-// ======================================================//
-// ------------------------------------------------------//
-
-  /// 009 - Boolean And Converting To Boolean
-
-  /*
-  ============================================
-  = Data Types
-  = ----------
-  = Boolean + Converting To Boolean
-  ============================================
-  */
-
-  // echo "1- "; var_dump((bool) ""); // false
-  // echo '<br>';
-  // echo "2- "; var_dump((bool) array());
-  // echo '<br>';
-  // echo "3- "; var_dump((bool) []);
-  // echo '<br>';
-  // echo "4- "; var_dump((bool) 0);
-  // echo '<br>';
-  // echo "5- "; var_dump((bool) "0");
-  // echo '<br>';
-  // echo "6- "; var_dump((bool) "Elzero");
-  // echo '<br>';
-  // echo "7- "; var_dump((bool) array(1));
-  // echo '<br>';
-  // echo "8- "; var_dump((bool) [1]);
-  // echo '<br>';
-  // echo "9- "; var_dump((bool) 100);
-  // echo '<br>';
-  // echo "10- "; var_dump((bool) -100);
-  // echo '<br>';
-  // echo "11- "; var_dump((bool) 10.5);
-  // echo '<br>';
-  // echo "12- "; var_dump((bool) -10.5);
-
-// ------------------------------------------------------//
-// ======================================================//
-// ------------------------------------------------------//
-
-/// 010 - String And Escaping
+/// 011 - Heredoc And Nowdoc
 
   /*
   ============================================
@@ -244,30 +8,413 @@
   = ----------
   = String And Escaping
   = -------------------
-  = nl2br()
+  = Heredoc
+  = Nowdoc
   ============================================
   */
 
-  // echo 'Hello PHP';
+  // $name = "Osama";
+
+  // // Heredoc
+  // echo <<<"Here"
+  // Hello PHP
+  // Special Characters $$$ ' ' ' """"" \\\\
+  // Hello My Name Is $name
+  // Here;
+
   // echo '<br>';
-  // echo "Hello PHP";
+
+  // // Nowdoc
+  // echo <<<'Now'
+  // Hello PHP
+  // Special Characters $$$ ' ' ' """"" \\\\
+  // Hello My Name Is $name
+  // Now;
+
   // echo '<br>';
-  // echo "Hello 'PHP'";
+
+  // echo '<ul>';
+  //   echo "<li>" . $name . "</li>";
+  //   echo "<li>" . $name . "</li>";
+  //   echo "<li>" . $name . "</li>";
+  //   echo "<li>" . $name . "</li>";
+  // echo '</ul>';
+
   // echo '<br>';
-  // echo 'Hello "PHP"';
+
+  // echo <<<"navlinks"
+  // <ul>
+  //   <li>$name</li>
+  //   <li>$name</li>
+  //   <li>$name</li>
+  //   <li>$name</li>
+  // </ul>
+  // navlinks;
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 012 - Array With Complex Tests
+
+  /*
+  ============================================
+  = Data Types
+  = ----------
+  = Array
+  = -------------------
+  = Array With Key
+  = Array Without Keys
+  = Array With One Key
+  = Array Value Override
+  = ------------------
+  = print_r()
+  ============================================
+  */
+
+  // echo '<pre>';
+  // print_r([
+  //   0 => "Sameh",
+  //   "A" => "Ahmed",
+  //   "B" => "Basem",
+  //   "Mahmoud",
+  //   True => "Sayed",
+  //   "1" => "Osama",
+  //   "Gamal",
+  //   9 => "Amera",
+  //   "Eman",
+  //   "Mohamed",
+  //   False => "Asmaa",
+  //   8 => "Haytham",
+  //   "Samer",
+  //   "Names" => [
+  //     "Osama",
+  //     "Ahmed",
+  //     "Sayed" => [
+  //       "1",
+  //       "2",
+  //       "3"
+  //     ]
+  //   ]
+  // ]);
+  // echo '</pre>';
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 013 - Introduction To Variables And Naming Rules
+
+  /*
+    Variables
+    - Naming Rules + Info
+    [1] Start With Dollar Sign $
+    [2] Start With A Letter [a-z] Or [A-Z] Or Underscore
+    [3] You Can Use Numbers Inside The Name
+    [4] No Special Characters Allowed
+    [5] Case Sensitive
+    - Test Single And Double Quotes
+
+    * Search
+    - Loosely Typed Language
+  */
+
+  // $username = "Osama";
+  // $Username = "Elzero";
+
+  // echo $username;
   // echo '<br>';
-  // echo 'Hello \'PHP\'';
+  // echo $Username;
   // echo '<br>';
-  // echo "Hello \"PHP\"";
+  // echo 'Hello $username';
   // echo '<br>';
-  // echo "Hello PHP\\";
-  // echo '<br>';
-  // echo 'Hello PHP
-  // On Multiple
-  // Lines';
-  // echo '<br>';
-  // echo nl2br('Hello PHP
-  // On Multiple
-  // Lines');
+  // echo "Hello $username";
+  
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 014 - Testing Variable In Real Life
 
 ?>
+<!-- <?php // $username = "Elzero" ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Page | <?php // echo $username ?></title>
+  </head>
+  <body>
+    <div>Welcome <?php // echo $username ?></div>
+    <div><?php // echo $username ?> You Scored 1000 Points</div>
+    <div>
+      <?php // include('files/score.php') ?>
+    </div>
+  </body>
+</html> -->
+<?php
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 015 - Variable Variable
+
+  /*
+    Variable Variable
+    Takes The Value Of A Variable And Treats That As The Name Of A Variable
+  */
+
+  // $a = "osama";
+  // $$a = "elzero"; //*  === $osama = "elzero"
+  // $$$a = "school"; //*  === $elzero = "school"
+
+  // echo $a;
+  // echo "<br>";
+  // echo $$a;
+  // echo "<br>";
+  // echo $osama;
+  // echo "<br>";
+  // echo $$$a;
+  // echo "<br>";
+  // echo $elzero;
+  // echo "<br>";
+
+  // echo "Hello ${$a}"; //* $$a
+  // echo "<br>";
+  // echo "Hello ${$$a}"; //* $$$a
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 016 - Assign By Value And By Reference
+
+  /*
+    Assign Variable By Reference
+    - By Default, Variables Are Always Assigned By Value
+    - Assigned By Reference Make Variable Alias Or Point To Another
+
+    * Search
+    - References Are Not Pointers
+  */
+
+  // $a = "Osama";
+  // $b = &$a;
+  // $b = "Elzero";
+  // $a = "School";
+
+  // echo $a; // School
+  // echo '<br>';
+  // echo $b; // School
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 017 - Predefined Variables And Test
+
+  /*
+    Pre-Defined Variables => var built in
+
+    * Search
+    - PHP Pre-Defined Variables
+  */
+
+  // echo '<pre>';
+  // print_r($_SERVER);
+  // echo $_SERVER["HTTP_CONNECTION"];
+  // echo '</pre>';
+
+  // echo $_GET["username"];
+
+?>
+
+<!-- <form action="" method="get">
+  <input type="text" name="username">
+  <input type="submit" value="Send">
+</form> -->
+<?php
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 018 - Introduction To Constants
+
+  /*
+    Constants
+    - That Value Cannot Change During The Execution
+    - Constants Always Uppercase
+
+    Syntax
+    - define( "name" , value , bool => case_insensitive )
+  */
+
+  // define("DB_NAME", "elzero");
+  // define("MAIN_NUMBER", 5);
+
+  // echo DB_NAME;
+  // echo "<br>";
+  // echo MAIN_NUMBER * 50;
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 019 - Predefined And Magic Constants
+
+  /*
+    Pre-Defined Constants [Case Sensitive]
+    - PHP_VERSION
+    - PHP_OS_FAMILY
+    - PHP_INT_MAX
+    - DEFAULT_INCLUDE_PATH
+
+    Magic Constants [Case Insensitive]
+    - __LINE__
+    - __FILE__
+    - __DIR__
+
+    Reserved Keywords
+    - break
+    - clone
+
+    Search
+    - PHP Predefined Constants
+    - Compile Time vs Runtime
+    - List of Reserved Words
+  */
+
+  // define("BREAKS", "AA");
+
+  // echo php_uname();
+  // echo '<br>';
+  // echo PHP_VERSION;
+  // echo '<br>';
+  // echo __LINE__;
+  // echo '<br>';
+  // echo __FILE__;
+  // echo '<br>';
+  // echo __dir__;
+  // echo '<br>';
+  // echo BREAKS;
+
+  // // No Problem Here
+  // function hello() {
+  //   return "Hello";
+  // }
+
+  // echo hello();
+
+  //* Syntax Error => Reserved Word
+  // function clone() {
+  //   return "Clone";
+  // }
+
+  // echo clone();
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 020 - Arithmetic Operators
+
+  /*
+    Operators
+    - Used To Perform Operations On Values.
+
+    Arithmetic Operators
+    - Used To Do Arithmetical Operations & Conversion
+
+    - $a [+]  $b => Addition
+    - $a [-]  $b => Subtraction
+    - $a [*]  $b => Multiplication
+    - $a [/]  $b => Division
+    - $a [%]  $b => Modulus
+    - $a [**] $b => Exponentiation
+    - +$a        => Identity
+    - -$a        => Negation
+  */
+
+  // echo 10 + 20;
+  // echo '<br>';
+  // echo gettype(10 + 20);
+  // echo '<br>';
+  // echo 9.5 + 20.5;
+  // echo '<br>';
+  // echo gettype(9.5 + 20.5);
+  // echo '<br>';
+
+  // echo 10 - 20;
+  // echo '<br>';
+  // echo gettype(10 - 20);
+  // echo '<br>';
+  // echo 9.5 - 20.5;
+  // echo '<br>';
+  // echo gettype(9.5 - 20.5);
+  // echo '<br>';
+
+  // echo 10 * 20;
+  // echo '<br>';
+  // echo gettype(10 * 20);
+  // echo '<br>';
+  // echo 9.5 * 20.5;
+  // echo '<br>';
+  // echo gettype(9.5 * 20.5);
+  // echo '<br>';
+
+  // echo 20 / 10;
+  // echo '<br>';
+  // echo gettype(20 / 10);
+  // echo '<br>';
+  // echo 20 / 8;
+  // echo '<br>';
+  // echo gettype(20 / 8);
+  // echo '<br>';
+
+  // echo 21 % 10; // Remove 1 To Become 20
+  // echo '<br>';
+  // echo 23 % 10; // Remove 3 To Become 20
+  // echo '<br>';
+  // echo 29 % 10; // Remove 9 To Become 20
+  // echo '<br>';
+  // echo 30 % 10;
+  // echo '<br>';
+
+  // echo 2 ** 4;
+  // echo '<br>';
+  // echo 2 * 2 * 2 * 2;
+  // echo '<br>';
+  // echo 3 ** 5;
+  // echo '<br>';
+  // echo 3 * 3 * 3 * 3 * 3;
+  // echo '<br>';
+
+  // echo "100";
+  // echo '<br>';
+  // echo gettype("100");
+  // echo '<br>';
+  // echo +"100";
+  // echo '<br>';
+  // echo gettype(+"100");
+  // echo '<br>';
+
+  // echo "-100";
+  // echo '<br>';
+  // echo gettype("-100");
+  // echo '<br>';
+  // echo -"-100";
+  // echo '<br>';
+  // echo gettype(-"-100");
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
