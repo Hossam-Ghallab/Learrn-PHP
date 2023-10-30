@@ -1,273 +1,390 @@
 <?php
-/// 001 - Introduction & Important Information
+/// 021 - Assignment Operators
 
-/// 002 - What’s New And How To Study The Course ?
+  /*
+    Operators
+    - Used To Perform Operations On Values.
 
-/// 003 - Install PHP And Prepare Environment To Work
+    Assignment Operators
+    - Used To Write Value To Another
 
-/// 004 - PHP Tags And Instructions Separation
+    - $a [+=]  $b => Addition
+    - $a [-=]  $b => Subtraction
+    - $a [*=]  $b => Multiplication
+    - $a [/=]  $b => Division
+    - $a [%=]  $b => Modulus
+    - $a [**=] $b => Exponentiation
+  */
 
-  // echo 'We Love PHP';
+  // $a = 10;
+  // // $a = $a + 20;
+  // $a += 20;
+
+  // $b = 20;
+  // // $b = $b - 5;
+  // $b -= 5;
+
+  // $c = 4;
+  // // $c = $c ** 4;
+  // $c **= 4;
+
+  // echo $a;
   // echo '<br>';
-
-  // ECHO 'We Love PHP';
-  // ECHO '<br>';
-
-  // print 'We Love PHP';
-  // print '<br>';
-
-  // PRINT 'We Love PHP';
-  // PRINT '<br>';
-
-?>
-
-<!-- <.?= 'We Love PHP With Short Tag';?.> //* delete . in the line code --> 
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-  </head>
-  <body>
-    <?php // echo 'HTML'; ?>
-  </body>
-</html> -->
-<?php // echo 'HTML';
+  // echo $b;
+  // echo '<br>';
+  // echo $c;
 
 // ------------------------------------------------------//
 // ======================================================//
 // ------------------------------------------------------//
 
-/// 005 - Comments And Best Practices
-
-  // Single Line Comment
-  // echo 'Test'; // Single Line Comment
-  // echo 'Test'; # Single Line Comment
+/// 022 - Comparison Operators Part 1
 
   /*
-    Line 1
-    Line 2
+    Operators
+    - Used To Perform Operations On Values.
+
+    Comparison Operators
+    - Used To Compare Two Values
+
+    - Part 1
+    - ==    => Equal
+    - !=    => Not Equal
+    - <>    => Not Equal
+    - ===   => Identical
+    - !==   => Not Identical
   */
 
-  /*
-    ====================
-    == My Special App ==
-    ====================
-  */
+  // // Test Equal
+  // var_dump(100 == 100);     // true
+  // echo '<br>';
+  // var_dump(100 == "100");   // true
+  // echo '<br>';
+  // var_dump(100.0 == "100"); // true
+  // echo '<br>';
+  // var_dump(100.0 != "100"); // false
+  // echo '<br>';
+  // var_dump(100.0 <> "100"); // false
 
-  /* Single Line */
+  // echo '<br>';
+  // echo '##############';
+  // echo '<br>';
 
-  // echo 'Test' /* Single Line */;
-
-  // I Used Print Because Its Faster Than Echo <= Example Not True
-  // print 'Test';
+  // // Test Identical
+  // var_dump(100 === 100);      // true
+  // echo '<br>';
+  // var_dump(100 === "100");    // false
+  // echo '<br>';
+  // var_dump(100.0 === "100");  // false
+  // echo '<br>';
+  // var_dump(100.0 === 100);    // false
+  // echo '<br>';
+  // var_dump(100.0 !== "100");  //  true
+  // echo '<br>';
+  // var_dump(100.0 !== 100);    //  true
 
 // ------------------------------------------------------//
 // ======================================================//
 // ------------------------------------------------------//
 
-/// 006 - Introduction To Data Type
+/// 023 - Comparison Operators Part 2
 
   /*
-  ============================================
-  = Data Types
-  = ----------
-  = bool  => Boolean
-  = int   => Integer
-  = float => Floating Point Number | double
-  = string
-  = array
-  = Other Types
-  = gettype()
-  ============================================
+    Operators
+    - Used To Perform Operations On Values.
+
+    Comparison Operators
+    - Used To Compare Two Values
+
+    - Part 2
+    - >     => Larger Than
+    - >=    => Larger Than Or Equal
+    - <     => Smaller Than
+    - <=    => Smaller Than Or Equal
+    - <=>   => Spaceship [Less Than, Equal Or Greater]
+
+    Search
+    - How Does PHP Compare Strings With Comparison Operators
   */
 
-  // echo "1- ".gettype(True);
+  // var_dump(100 > 50);
   // echo '<br>';
-  // echo "2- ".gettype(False);
+  // var_dump(100 > 100);
   // echo '<br>';
-  // echo "3- ".gettype(true);
+  // var_dump(100 >= 100);
   // echo '<br>';
-  // echo "4- ".gettype(100);
+  // var_dump(100 >= 110);
   // echo '<br>';
-  // echo "5- ".gettype(-200);
+  // var_dump(100 < 50);
   // echo '<br>';
-  // echo "6- ".gettype(0);
+  // var_dump(100 <= 50);
   // echo '<br>';
-  // echo "7- ".gettype(70.30);
+  // var_dump(100 <=> 200); // -1
   // echo '<br>';
-  // echo "8- ".gettype(-60.30);
+  // var_dump(100 <=> 100); // 0
   // echo '<br>';
-  // echo "9- ".gettype('Elzero');
-  // echo '<br>';
-  // echo "10- ".gettype("Elzero");
-  // echo '<br>';
-  // echo "11- ".gettype(array("EG" => "Egypt", "KSA" => "Saudi Arabia"));
-  // echo '<br>';
-  // echo "12- ".gettype(array("Egypt", "Saudi Arabia"));
-  // echo '<br>';
-  // echo "13- ".gettype(["Egypt", "Saudi Arabia"]);
+  // var_dump(100 <=> 50); // 1
 
 // ------------------------------------------------------//
 // ======================================================//
 // ------------------------------------------------------//
 
-/// 007 - Type Juggling And Automatic Type Conversion
+/// 024 - Increment And Decrement Operators
 
   /*
-  ============================================
-  = Data Types
-  = ----------
-  = Type Juggling + Automatic Type Conversion
-  ============================================
+    Operators
+    - Used To Perform Operations On Values.
+
+    Incrementing & Decrementing Operators
+    - Increase And Decrease Values
   */
 
-  // echo 1 + "2"; // 3
+  // $likes = 0;
+  // $likes++;
+  // $likes++;
+  // $likes++;
+  // $likes--;
+
+  // echo $likes; // 2
   // echo '<br>';
-  // echo gettype(1 + "2"); // Integer
+
+  // $a = 0;
+
+  // echo $a--; // 0
   // echo '<br>';
-  // echo True; // 1
+  // echo $a; // -1
   // echo '<br>';
-  // echo gettype(True); // Boolean
+
+  // $b = 0;
+
+  // echo --$b; // -1
   // echo '<br>';
-  // echo True + True; // 2
-  // echo '<br>';
-  // echo gettype(True + True); // Integer
-  // echo '<br>';
-  // echo 5 + '5 Lessons'; // 10 => Warning
-  // echo '<br>';
-  // echo gettype(5 + '5 Lessons'); // Integer => Warning
-  // echo '<br>';
-  // echo 10 + 15.5; // 25.5
-  // echo '<br>';
-  // echo gettype(10 + 15.5); // double => Float
-  // echo '<br>';
+  // echo $b; // -1
 
 // ------------------------------------------------------//
 // ======================================================//
 // ------------------------------------------------------//
 
-/// 008 - Type Casting
+/// 025 - Logical Operators
 
   /*
-  ============================================
-  = Data Types
-  = ----------
-  = Type Casting
-  = ----------------------
-  = "boolean" or "bool"
-  = "integer" or "int"
-  = "float" or "double" or "real"
-  = "string"
-  = "array"
-  = "object"
-  = "null"
-  = ------
-  = Search For Settype
-  ============================================
+    Operators
+    - Used To Perform Operations On Values.
+
+    Logical Operators
+    - Compare Conditions
+
+    and => And => Two Are True
+    &&  => And => Two Are True ["&&" Has A Greater Precedence Than "and"]
+    or  => Or  => One Or Both Is True
+    ||  => Or  => One Or Both Is True ["||" Has A Greater Precedence Than "or"]
+    xor => Xor => One Is True But Not Both
+    !   => Not => Not True
   */
 
-  // echo 5 + (int) "5 Lessons";
+  // var_dump(100 > 50 and 100 > 80 and 100 > 90); // True
   // echo '<br>';
-  // echo 5 + (integer) "5 Lessons";
+  // var_dump(100 > 50 && 100 > 80 && 100 > 100); // False
   // echo '<br>';
-  // echo 5 + ( integer ) "5 Lessons";
+  // var_dump(100 > 50 or 100 > 110 or 100 > 100); // True
   // echo '<br>';
-  // echo gettype(5 + (int) "5 Lessons");
+  // var_dump(100 > 50 xor 100 > 80); // False
   // echo '<br>';
-  // echo 10 + 15.5;
-  // echo '<br>';
-  // echo 10 + (int) 15.5;
-  // echo '<br>';
-  // echo gettype(10 + (int) 15.5);
-  // echo '<br>';
-  // echo 10.5 + 10.5;
-  // echo '<br>';
-  // echo gettype(10.5 + 10.5);
-  // echo '<br>';
-  // echo (int) 10.5 + (int) 10.5; // 20
-  // echo '<br>';
-  // echo gettype((int) 10.5 + (int) 10.5);
-  // echo '<br>';
-  // echo (int) (10.5 + 10.5); // 21
+  // var_dump(100 < 50 xor 100 > 80); // True
 
 // ------------------------------------------------------//
 // ======================================================//
 // ------------------------------------------------------//
 
-  /// 009 - Boolean And Converting To Boolean
+/// 026 - String Operators
 
   /*
-  ============================================
-  = Data Types
-  = ----------
-  = Boolean + Converting To Boolean
-  ============================================
+    Operators
+    - Used To Perform Operations On Values.
+
+    String Operators
+    - Concatenate Strings
+
+    .
+    .=
   */
 
-  // echo "1- "; var_dump((bool) ""); // false
+  // define("ELZERO", "1");
+
+  // $a = "Elzero";
+  // $b = "Web";
+  // $c = "School";
+
+  // echo "$a $b $c";  // Elzero Web School
   // echo '<br>';
-  // echo "2- "; var_dump((bool) array());
+  // echo "{$a} {$b} {$c}";  // Elzero Web School
   // echo '<br>';
-  // echo "3- "; var_dump((bool) []);
+  // echo $a . " " . $b . " " . $c;  // Elzero Web School
   // echo '<br>';
-  // echo "4- "; var_dump((bool) 0);
+  // echo "{$a} {$b} {$c} " . ELZERO . " " . testing(); // Elzero Web School 1 1
   // echo '<br>';
-  // echo "5- "; var_dump((bool) "0");
-  // echo '<br>';
-  // echo "6- "; var_dump((bool) "Elzero");
-  // echo '<br>';
-  // echo "7- "; var_dump((bool) array(1));
-  // echo '<br>';
-  // echo "8- "; var_dump((bool) [1]);
-  // echo '<br>';
-  // echo "9- "; var_dump((bool) 100);
-  // echo '<br>';
-  // echo "10- "; var_dump((bool) -100);
-  // echo '<br>';
-  // echo "11- "; var_dump((bool) 10.5);
-  // echo '<br>';
-  // echo "12- "; var_dump((bool) -10.5);
+
+  // function testing() {
+  //   return 1;
+  // }
+
+  // $x = "Elzero ";
+  // $x .= "Web"; // $x = $x . "Web" => Elzero Web
+  // $x .= " School"; // $x = $x . "School" => Elzero Web School
+
+  // echo $x; // Elzero Web School
 
 // ------------------------------------------------------//
 // ======================================================//
 // ------------------------------------------------------//
 
-/// 010 - String And Escaping
+/// 027 - Array Operators
 
   /*
-  ============================================
-  = Data Types
-  = ----------
-  = String And Escaping
-  = -------------------
-  = nl2br()
-  ============================================
+    Operators
+    - Used To Perform Operations On Values.
+
+    Array Operators
+    - Deal With Arrays
+
+    +     => Union
+    ==    => Equal => Same Key And Value
+    !=    => Not Equal
+    <>    => Not Equal
+    ===   => Identical => Same Key And Value, Same Order, Same Type
+    !==   => Not Identical
   */
 
-  // echo 'Hello PHP';
-  // echo '<br>';
-  // echo "Hello PHP";
-  // echo '<br>';
-  // echo "Hello 'PHP'";
-  // echo '<br>';
-  // echo 'Hello "PHP"';
-  // echo '<br>';
-  // echo 'Hello \'PHP\'';
-  // echo '<br>';
-  // echo "Hello \"PHP\"";
-  // echo '<br>';
-  // echo "Hello PHP\\";
-  // echo '<br>';
-  // echo 'Hello PHP
-  // On Multiple
-  // Lines';
-  // echo '<br>';
-  // echo nl2br('Hello PHP
-  // On Multiple
-  // Lines');
+  // $arr1 = [1 => "A", 2 => "B"];
+  // $arr2 = [3 => "C", 4 => "D"];
+  // $arr3 = $arr1 + $arr2;
 
-?>
+  // echo '<pre>';
+  // print_r($arr1 + $arr2);
+  // print_r($arr3);
+  // echo '</pre>';
+
+  // $arr4 = [1 => "10", 2 => "20"];
+  // $arr5 = [2 => 20, 1 => 10];
+
+  // var_dump($arr4 == $arr5); // True
+  // echo '<br>';
+  // var_dump($arr4 != $arr5); // False
+  // echo '<br>';
+  // var_dump($arr4 <> $arr5); // False
+  // echo '<br>';
+
+  // $arr6 = [1 => 100, 2 => 200];
+  // $arr7 = [1 => 100, 2 => 200];
+
+  // var_dump($arr6 === $arr7); // Give Me True
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 028 - Error Control Operator
+
+  /*
+    Operators
+    - Used To Perform Operations On Values.
+
+    Error Control Operator
+    - Control The Errors
+
+    @
+    - Variable
+    - File
+    - Include
+  */
+
+  // // Variable
+  // $a = 10;
+  // $b = @$a or die("Variable Not Found");
+
+  // echo "Test $b";
+  // echo '<br>';
+
+  // // File
+  // $f = @file("osama.txt") or die("File Not Found");
+  // echo '<pre>';
+  // print_r($f);
+  // echo '</pre>';
+  // echo '<br>';
+
+  // // Include
+  // (@include("osama_elzero.php")) or die("Include File Not Found");
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 029 - Operator Precedence
+
+  /*
+    Operators
+    - Used To Perform Operations On Values.
+
+    Operator Precedence => الأولوية
+    - "||" Has A Greater Precedence Than "or"
+    - "&" Has A Greater Precedence Than "and"
+  */
+
+  // echo 2 + 4 * 5; // 22
+  // echo '<br>';
+  // echo (2 + 4) * 5; // 30
+  // echo '<br>';
+  // echo 10 || false || 0 || [] || ""; // True => 1
+  // echo '<br>';
+  // echo true; // 1
+  // echo '<br>';
+  // var_dump(10 || false || 0 || [] || ""); // True
+  // echo '<br>';
+  // echo 10 || false; // 1
+  // echo '<br>';
+
+  // $a = 10 || false; // $a = (10 || false) => $a = 1
+  // echo $a; // 1
+
+  // echo '<br>';
+
+  // $b = 10 or false; // ($b = 10) or false
+  // echo $b; // 10
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
+
+/// 030 - If, Elseif, Else Basics
+
+  /*
+    Control Structure
+    - If, Elseif, Else <= Basics
+
+    Syntax
+    if (Condition) {
+      // If Condition Is True <= Run Me
+    } else if (Condition) {
+      // If Condition Is True <= Run Me if One Is Not True
+    } else {
+      // If Condition Is False <= Run Me
+    }
+  */
+
+  // if (10 >= 10) {
+
+  //   echo "First Condition";
+
+  // } elseif (10 >= 10) {
+
+  //   echo "Second Condition";
+
+  // } else {
+
+  //   echo "No";
+
+  // }
+
+// ------------------------------------------------------//
+// ======================================================//
+// ------------------------------------------------------//
