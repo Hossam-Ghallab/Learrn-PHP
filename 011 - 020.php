@@ -116,7 +116,7 @@
     - Test Single And Double Quotes
 
     * Search
-    - Loosely Typed Language
+    - Loosely Typed Language => can you use var but it doesn't require you to classify the type of
   */
 
   // $username = "Osama";
@@ -287,7 +287,7 @@
     - break
     - clone
 
-    Search
+    * Search
     - PHP Predefined Constants
     - Compile Time vs Runtime
     - List of Reserved Words
